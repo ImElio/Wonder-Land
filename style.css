@@ -1,0 +1,312 @@
+*{
+    padding:0;
+    margin:0;
+    outline: none;
+    text-decoration: none;
+}
+:root{
+    --blue: #55B1F5;
+    --blueHover: #67b6f0;
+    --blueActive: #42a9f5;
+    --white: white;
+    --black: #19141E;
+    --gray:#9c9c9c;
+
+    --ombra: 0px 0px 20px 0px rgba(0,0,0,0.4);
+}
+
+/*OGGETTI DEFAULT*/
+.button{
+    background-color:var(--blue);
+    border-radius: 10px;
+    box-shadow: var(--ombra);
+    margin:20px 0;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size:17px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    user-select: none;
+}
+.button:hover{
+    transform: scale(1.01);
+    background-color: var(--blueHover);
+}
+.button:active{
+    transform: scale(0.99);
+    background-color: var(--blueActive);
+}
+.titleSezione{
+    width:fit-content;
+    height:70px;
+    background-color: var(--white);
+    box-shadow: var(--ombra);
+    font-family: 'Roboto', sans-serif;
+    color:var(--black);
+    font-weight: bold;
+    font-size:45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    padding:2px 20px;
+    margin: 0 auto;
+    position: relative;
+    top:-20px;
+}
+
+body{
+    background-color: var(--white);
+}
+#background{
+    position: absolute;
+    z-index: -1;
+    top:0;
+    right:0;
+}
+#profilo{
+    position: absolute;
+    z-index: 0;
+    top:-120px;
+    right:130px;
+}
+
+/*NAVBAR*/
+#navbar{
+    width:100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#logo{
+    width:50px;
+    position: relative;
+    left:20px;
+}
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right:20px;
+}
+.menuTab{
+    margin:0 7px;
+    font-size:16px;
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.menuTab:hover{
+    transform: scale(1.02);
+}
+
+/*INTESTAZIONE*/
+#intestazione{
+    position: absolute;
+    z-index: 0;
+    top:400px;
+    left:130px;
+}
+#title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color:var(--black);
+    font-size:65px;
+    line-height: 100%;
+}
+#subtitle{
+    font-family: 'Roboto', sans-serif;
+    color:var(--black);
+    font-size:25px;
+}
+#intestazione .button{
+    width:200px;
+    height:50px;
+}
+
+/*PAGINA*/
+#pagina{
+    width:100%;
+    height:200vh;
+    background-color: var(--white);
+    box-shadow: var(--ombra);
+    position: absolute;
+    top:90vh;
+    padding-top: 20vh;
+}
+
+/*ULTIMO VIDEO*/
+#ultimoVideoSezione{
+    width:80%;
+    height:450px;
+    background-color: var(--white);
+    box-shadow: var(--ombra);
+    border-radius: 5px;
+    margin:0 auto;
+}
+#ultimoVideo{
+    width:100%;
+    height:80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#ultimoVideoInfo{
+    width:50%;
+    padding:20px;
+    height:100%;
+    display: inline-block;
+    height:350px;
+}
+#utlimoVideoTitle{
+    font-family: 'Roboto', sans-serif;
+    color:var(--black);
+    font-weight: bold;
+    font-size:30px; 
+    width:100%;
+}
+#utlimoVideoDescription{
+    font-family: 'Roboto', sans-serif;
+    color:var(--black);
+    font-size:25px;
+    margin-top:10px;
+    width:100%;
+}
+#ultimoVideoInfo .button{
+    width:150px;
+    height:40px;
+    display: inline-flex;
+    margin-right: 20px;
+}
+
+#ultimoVideoImg{
+    display: inline-block;
+    width:calc(45% - 100px);
+    height:100%;
+}
+#ultimoVideoImg img{
+    width: 100%;
+}
+
+/*DISCORD*/
+#discordSezione{
+    width: 100%;
+    height:500px;
+    margin-top:150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#discordSezione > div{
+    width:40%;
+    height: 100%;
+}
+#discordSezione .titleSezione{
+    top:0;
+}
+#discordDescription{
+    font-family: 'Roboto', sans-serif;
+    color:var(--black);
+    font-size:25px;
+    margin-top:10px;
+    width:80%;
+    margin:20px auto;
+    text-align: center;
+}
+#discordTesto{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+#discordTesto .button{
+    width:150px;
+    height:40px;
+    display: inline-flex;
+    margin-right: 20px;
+}
+#discordButtons{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+}
+#discordImg img{
+    height:100%;
+}
+
+/*TUTORIAL*/
+#tutorialSezione{
+    width: 100%;
+    height:500px;
+    margin-top:150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#tuttiITutorial{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top:10px;
+}
+.tutorial{
+    width:300px;
+    height:400px;
+    background-color: var(--white);
+    box-shadow: var(--ombra);
+    margin: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.tutorialImg{
+    width:calc(100% - 40px);
+    height:170px;
+    margin:20px 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tutorialImg img{
+    height:100%;
+}
+.tutorialTitle{
+    font-family: 'Roboto', sans-serif;
+    color:var(--black);
+    font-weight: bold;
+    font-size:30px;
+    width:100%;
+    text-align: center;
+}
+.tutorialDescription{
+    font-family: 'Roboto', sans-serif;
+    color:var(--black);
+    font-size:20px;
+    width:100%;
+    text-align: center;
+}
+.tutorial .button{
+    width:120px;
+    height:35px;
+    display: inline-flex;
+    font-size: 15px;
+    margin: 10px 0px;
+}
